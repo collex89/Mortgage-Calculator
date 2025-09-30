@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage repayment calculator</title>
+    <link rel="icon" href="/mortgage-repayment-calculator-main/assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="name name-1">
+            <section>
+                <span class="MC">Mortgage Calculator</span>
+                <span class="CA">Clear All</span>
+            </section>
+            <main class="no1">
+                <label for="">Mortgage Amount</label>
+                <div class="input-box1">
+                    <i class="fa-solid fa-euro-sign"></i><input type="text" value="300,000">
+                </div>
+            </main>
+            <main class="no2">
+                <section>
+                    <label for="">Mortgage Term</label>
+                    <div class="input-box2">
+                        <input type="text" value="25"><span>years</span>
+                </section>
+                <section>
+                    <label for="">Interest Rate</label>
+                    <div class="input-box3">
+                        <input type="text" value="5.25"><span>%</span>
+                    </div>
+            </main>
+            <main class="no3">
+                <p>Mortgage Type</p>
+                <div class="radio radio-1">
+                    <input type="radio" name="type" ><label for="repayment">Repayment</label>
+                    </div>
+                    <div class="radio radio-2">
+                    <input type="radio" name="type" ><label for="interest">Interest Only</label>
+                </div>
+            </main>
+            <button><img src="/mortgage-repayment-calculator-main/assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+        </div>
+        <div class="name name-2">
+            <p class="YR">Your results</p>
+            <span id="YR">Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.</span>
+
+            <div class="results">
+                <section class="monthly">
+                    <p>Your monthly repayments</p>
+                    <span>€1,797.74</span>
+                </section>
+                <section class="total">
+                    <p>Total you'll repay over the term</p>
+                    <span>€539,322.94</span>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
